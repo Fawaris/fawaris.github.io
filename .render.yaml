@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: your-app-name
+    env: python
+    region: your-region
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn server:app"
+    rootDir: home
